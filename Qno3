@@ -1,0 +1,110 @@
+Q3. Differentiate between unary, binary, and ternary operators in JavaScript. Give examples of each.
+->
+In JavaScript, operators can be classified based on the number of operands they work with. Here's a breakdown of unary, binary, and ternary operators:
+
+### 1. Unary Operators
+Unary operators operate on a single operand. They typically perform operations like incrementing, decrementing, or negating a value, or checking its type.
+
+- **Unary Plus (`+`)**: Converts its operand to a number.
+  ```javascript
+  let x = "5";
+  let number = +x; // 5 (string "5" is converted to number 5)
+  ```
+
+- **Unary Negation (`-`)**: Negates its operand.
+  ```javascript
+  let y = 5;
+  let negated = -y; // -5
+  ```
+
+- **Increment (`++`)**: Increases its operand by one.
+  ```javascript
+  let z = 10;
+  z++; // 11
+  ```
+
+- **Decrement (`--`)**: Decreases its operand by one.
+  ```javascript
+  let a = 10;
+  a--; // 9
+  ```
+
+- **Logical NOT (`!`)**: Inverts the Boolean value of its operand.
+  ```javascript
+  let isTrue = true;
+  let isFalse = !isTrue; // false
+  ```
+
+- **Typeof**: Returns the type of its operand.
+  ```javascript
+  let type = typeof "Hello"; // "string"
+  ```
+
+### 2. Binary Operators
+Binary operators operate on two operands. These include most arithmetic, assignment, comparison, and logical operators.
+
+- **Addition (`+`)**: Adds two operands.
+  ```javascript
+  let sum = 5 + 3; // 8
+  ```
+
+- **Subtraction (`-`)**: Subtracts the right operand from the left operand.
+  ```javascript
+  let difference = 10 - 4; // 6
+  ```
+
+- **Multiplication (`*`)**: Multiplies two operands.
+  ```javascript
+  let product = 6 * 7; // 42
+  ```
+
+- **Division (`/`)**: Divides the left operand by the right operand.
+  ```javascript
+  let quotient = 20 / 4; // 5
+  ```
+
+- **Modulus (`%`)**: Returns the remainder of the division of two operands.
+  ```javascript
+  let remainder = 10 % 3; // 1
+  ```
+
+- **Assignment (`=`)**: Assigns a value to a variable.
+  ```javascript
+  let b = 10;
+  ```
+
+- **Equality (`==`)**: Compares two values for equality.
+  ```javascript
+  let isEqual = (5 == '5'); // true
+  ```
+
+- **Strict Equality (`===`)**: Compares two values for equality without type coercion.
+  ```javascript
+  let isStrictEqual = (5 === '5'); // false
+  ```
+
+- **Logical AND (`&&`)**: Returns true if both operands are true.
+  ```javascript
+  let andResult = (true && false); // false
+  ```
+
+- **Logical OR (`||`)**: Returns true if at least one operand is true.
+  ```javascript
+  let orResult = (true || false); // true
+  ```
+
+### 3. Ternary Operator
+The ternary operator is the only operator in JavaScript that operates on three operands. It’s used as a shortcut for the `if-else` statement.
+
+- **Syntax**: `condition ? expressionIfTrue : expressionIfFalse`
+  ```javascript
+  let age = 18;
+  let canVote = (age >= 18) ? "Yes" : "No"; // "Yes"
+  ```
+
+### Summary
+- **Unary operators** operate on a single operand and are often used for type conversions or modifying a single value.
+- **Binary operators** require two operands and cover a wide range of operations such as arithmetic, comparison, and logical operations.
+- **Ternary operator** provides a concise way to perform conditional logic with three operands, acting as a shorthand for `if-else` statements.
+
+Understanding the differences between these operators and their usage is crucial for effective programming in JavaScript.
